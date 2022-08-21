@@ -27,7 +27,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("https://secrects-sharing-secretly.herokuapp.com/userDB");
+mongoose.connect("mongodb+srv://admin-suman:test-321@cluster0.agoyghf.mongodb.net/?retryWrites=true&w=majority/userDB");
 
 const userSchema = new mongoose.Schema ({
     email: String,
